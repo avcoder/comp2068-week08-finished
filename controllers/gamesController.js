@@ -2,7 +2,7 @@ const Game = require('../models/Game');
 const url = require('url');
 
 exports.homePage = (req, res) => {
-  res.render('index', { title: 'Home' });
+  res.render('index', { title: 'Home', user: req.user });
 };
 
 exports.getGames = (req, res) => {
